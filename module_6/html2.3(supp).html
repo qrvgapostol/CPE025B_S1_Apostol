@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Static Reference Table</title>
+    <style>
+        /* Fixed table at the bottom */
+        .reference-table {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #ffffff;
+            border-top: 2px solid #000;
+            border-collapse: collapse;
+        }
+
+        .reference-table th,
+        .reference-table td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: center;
+        }
+
+        .reference-table th {
+            background-color: #f2f2f2;
+        }
+
+        /* Prevent content from being hidden behind the table */
+        body {
+            margin-bottom: 200px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Continents Information</h1>
+    <p>This content scrolls, but the table below stays visible.</p>
+
+    <!-- Static Reference Table -->
+    <table class="reference-table" border="1">
+        <tr>
+            <th>Continent</th>
+            <th>Area (sq km)</th>
+            <th>Population (approx)</th>
+        </tr>
+        <tr>
+            <td>Asia</td>
+            <td>44,579,000</td>
+            <td>4.6 Billion</td>
+        </tr>
+        <tr>
+            <td>Africa</td>
+            <td>30,370,000</td>
+            <td>1.3 Billion</td>
+        </tr>
+        <tr>
+            <td>North America</td>
+            <td>24,709,000</td>
+            <td>579 Million</td>
+        </tr>
+        <tr>
+            <td>South America</td>
+            <td>17,840,000</td>
+            <td>423 Million</td>
+        </tr>
+        <tr>
+            <td>Europe</td>
+            <td>10,180,000</td>
+            <td>746 Million</td>
+        </tr>
+        <tr>
+            <td>Australia/Oceania</td>
+            <td>8,600,000</td>
+            <td>43 Million</td>
+        </tr>
+    </table>
+
+</body>
+</html>
