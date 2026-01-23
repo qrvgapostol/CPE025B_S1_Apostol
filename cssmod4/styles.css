@@ -1,0 +1,9 @@
+.float-left {
+    float: right;
+    margin-right: 10px;
+}
+
+img {
+  width: 50%;
+  height: auto;
+}
