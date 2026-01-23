@@ -1,0 +1,25 @@
+h1 {
+    color: rgb(0, 128, 0); /* Dark Green using RGB */
+  }
+  
+  p {
+    color: #FF5733; /* Bright Orange using HEX */
+  }
+  
+  .vivid {
+    color: hsl(210, 100%, 50%); /* Vivid Blue using HSL */
+  }
+  
+  a {
+    color: pink; /* Pink color using named color */
+  }
+  ul {
+    list-style-type: square; /* Changes bullets to squares */
+  }
+
+  .header {
+    background-image: url("https://edube.org/uploads/media/default/0001/03/sunflowers_sunset_full.jpg");
+    height: 500px;
+    text-align: center;
+    color: white;
+  }
