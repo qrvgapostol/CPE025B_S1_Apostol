@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Survey form for Albi Players</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #1e1e2f;
+      color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      text-align: center;
+      background-color: #2c2c3c;
+      padding: 20px;
+      border-bottom: 3px solid #ff9800;
+    }
+
+    h1 {
+      margin: 0;
+      color: #ff9800;
+    }
+
+    p {
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    form {
+      max-width: 600px;
+      margin: 30px auto;
+      background-color: #2c2c3c;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0,0,0,0.6);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #ffcc80;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #3c3c4c;
+      color: #fff;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin-right: 8px;
+    }
+
+    button {
+      background-color: #ff9800;
+      color: #fff;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #e68900;
+    }
+
+    textarea {
+      resize: none;
+    }
+
+    .section-title {
+      margin-top: 20px;
+      font-size: 16px;
+      color: #ffcc80;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Survey for Albion Online Players</h1>
+    <p>This form will be sent for those who frequently play Albion Online (Baka kasi hindi na kayo natutulog eh.)</p>
+  </header>
+
+  <form id="survey-form">
+    <label id="name-label" for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+    <label id="email-label" for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+    <label id="age-label" for="age">Age:</label>
+    <input type="number" id="number" name="age" placeholder="Enter your age" min="20" max="99" required>
+
+    <label for="role"><strong>Select your Role in Albion:</strong></label>
+    <select id="role" name="role">
+      <option value="">--Please choose an option--</option>
+      <option value="Tank">Tank</option>
+      <option value="Healer">Healer</option>
+      <option value="DPS">DPS</option>
+      <option value="Support">Support</option>
+    </select>
+
+    <label for="frequency">How often do you play:</label>
+    <select id="frequency" name="frequency">
+      <option value="">--Please choose an option--</option>
+      <option value="once">Once a week</option>
+      <option value="twice">Twice a week</option>
+      <option value="thrice">Thrice a week</option>
+      <option value="nolife">Di kana natutulog lol!!</option>
+    </select>
+
+    <label for="tier">What is your Tier:</label>
+    <select id="tier" name="tier">
+      <option value="">--Please choose an option--</option>
+      <option value="Tier 1">Tier 1 Beginner</option>
+      <option value="Tier 2">Tier 2 Novice</option>
+      <option value="Tier 3">Tier 3 Journeyman</option>
+      <option value="Tier 4">Tier 4 Adept</option>
+      <option value="Tier 5">Tier 5 Expert</option>
+      <option value="Tier 6">Tier 6 Master</option>
+      <option value="Tier 7">Tier 7 Grandmaster</option>
+      <option value="Tier 8">Tier 8 Elder (Lakas mo lods)</option>
+    </select>
+
+    <p class="section-title">Choose your preferred contact method:</p>
+    <input type="radio" id="contact-email" name="contact" value="email">
+    <label for="contact-email">Email</label>
+    <input type="radio" id="contact-phone" name="contact" value="phone">
+    <label for="contact-phone">Phone</label>
+    <input type="radio" id="contact-discord" name="contact" value="Discord">
+    <label for="contact-discord">Discord</label>
+    <input type="radio" id="contact-viber" name="contact" value="Viber">
+    <label for="contact-viber">Viber</label>
+
+    <p class="section-title">What do you do when opening:</p>
+    <input type="checkbox" id="solo-dungeons" name="interest" value="solo-dungeons">
+    <label for="solo-dungeons">Solo Dungeons</label>
+    <input type="checkbox" id="corrupted-dungeons" name="interest" value="corrupted-dungeons">
+    <label for="corrupted-dungeons">Corrupted Dungeons</label>
+    <input type="checkbox" id="group-dungeons" name="interest" value="group-dungeons">
+    <label for="group-dungeons">Group Dungeons</label>
+    <input type="checkbox" id="raid" name="interest" value="raid">
+    <label for="raid">Raid</label>
+    <input type="checkbox" id="tracking" name="interest" value="tracking">
+    <label for="tracking">Tracking</label>
+
+    <label for="comments">Type your comments here:</label>
+    <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Type comment here.."></textarea>
+
+    <button id="submit" type="submit">Submit</button>
+  </form>
+</body>
+</html>
