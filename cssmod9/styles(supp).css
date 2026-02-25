@@ -1,0 +1,116 @@
+/* General Body Styles */
+body {
+  color: #333;
+  background-color: #fdf6e3; /* light warm background for cafe vibe */
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles */
+.header {
+  background-color: #ffcc80; /* warm coffee tone */
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.header p {
+  margin: 5px 0 0 0;
+  font-size: 1.2em;
+  color: #5d4037; /* brownish tagline color */
+}
+
+/* Navigation Menu */
+.navigation-menu {
+  list-style: none;
+  padding: 10px 0;
+  text-align: center;
+  background-color: #ffe0b2;
+  margin: 0;
+}
+
+.navigation-menu li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.navigation-menu a {
+  text-decoration: none;
+  color: #5d4037;
+  font-weight: bold;
+}
+
+.navigation-menu a:hover {
+  text-decoration: underline;
+}
+
+/* Main Content */
+.main-content {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.main-content section {
+  margin-bottom: 40px;
+}
+
+.main-content h2 {
+  color: #bf360c; /* dark orange accent */
+  margin-bottom: 10px;
+}
+
+.main-content p {
+  line-height: 1.6;
+}
+
+/* Menu List */
+.menu-list {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+.menu-list li {
+  padding: 5px 0;
+  background-color: #ffe0b2;
+  margin-bottom: 5px;
+  border-radius: 8px;
+  width: fit-content;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #ffcc80;
+  color: #5d4037;
+}
+
+/* Links */
+a {
+  color: #5d4037;
+  text-decoration: underline;
+}
+
+a:hover,
+a:focus {
+  color: #3e2723;
+}
+
+/* Large text & High contrast (optional) */
+.large-text {
+  font-size: 20px;
+}
+
+.high-contrast-text {
+  color: #000;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 4px;
+}
