@@ -1,5 +1,6 @@
 class Vehicle {
     constructor(id, type) {
+        // Code here!
       this.id = id;
       this.type = type;
       this.isDeployed = false;
@@ -8,14 +9,17 @@ class Vehicle {
   
   class FleetManager {
     constructor() {
+        // Code here!
       this.vehicles = [];
     }
   
     addVehicle(vehicle) {
+        // Code here!
       this.vehicles.push(vehicle);
     }
   
     deployVehicle(id) {
+        // Code here!
       const vehicle = this.vehicles.find(v => v.id === id);
   
       if (!vehicle) {
@@ -27,6 +31,7 @@ class Vehicle {
     }
   
     getAvailableVehicles() {
+        // Code here!
         return this.vehicles.filter(v => v.isDeployed === false);
      }
     }
