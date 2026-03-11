@@ -1,0 +1,68 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #fdf6f0; /* light cream background */
+    color: #4b3832; /* dark coffee brown text */
+}
+
+/* Header styles */
+header {
+    background-color: #6f4e37; /* medium coffee brown */
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header p {
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+
+/* Main section styles */
+main {
+    padding: 20px;
+}
+
+section {
+    background-color: #fff8f2; /* light cream box */
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+/* Section headings */
+h2 {
+    color: #6f4e37; /* match header coffee color */
+}
+
+/* Lists */
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+/* Links */
+a {
+    color: #a0522d; /* sienna brown link color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #d2691e; /* darker orange brown on hover */
+}
+
+/* Footer styles */
+footer {
+    background-color: #6f4e37; /* same as header */
+    color: #fff;
+    text-align: center;
+    padding: 15px 20px;
+    margin-top: 20px;
+}
+
+/* First-line pseudo-element */
+p::first-line {
+    font-weight: bold;
+}
