@@ -1,0 +1,84 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin: 0;
+    background-color: #eef3f8;
+}
+
+/* Header styles */
+header {
+    background-color: #2c3e50;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+/* Section styles */
+section {
+    margin: 20px;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #2c3e50;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+/* Element selector */
+h2 {
+    color: #34495e;
+}
+
+/* Class selector */
+.highlight {
+    background-color: #3498db;
+    color: white;
+    padding: 4px;
+}
+
+/* ID selector */
+#header {
+    border-bottom: 3px solid #3498db;
+}
+
+/* Attribute selector */
+a[href^="mailto:"] {
+    color: #3498db;
+    text-decoration: none;
+}
+
+/* Pseudo-class selector */
+a:hover {
+    color: #1abc9c;
+}
+
+/* Pseudo-element selector */
+p::first-line {
+    font-weight: bold;
+}
+
+/* Combinator selector */
+header + main {
+    border-top: 1px solid #bdc3c7;
+}
+
+/* h1 style */
+h1 {
+    color: #2980b9 !important;
+}
+
+/* Paragraph style */
+p {
+    color: #2c3e50;
+}
+
+/* Higher specificity example */
+#header h1 {
+    color: #1abc9c !important;
+}
